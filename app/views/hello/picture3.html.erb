@@ -1,0 +1,12 @@
+<% content_for :gazou do %>
+<%= image_tag 'toshi3.jpg',class:'toshisize'%>
+<% end %>
+<% content_for :bunsyo do %>
+<h1 class="masthead-heading text-uppercase mb-0">はい、カイロ。おなかに張りな</h1>
+<% end %>
+<% content_for :button do %>
+    <div>
+            <%= button_to '戻る', {controller: 'hello', action: 'show'}, {method: :get, class: 'btositai'} %>
+  
+    </div>
+<% end %>
